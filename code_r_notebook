@@ -30,7 +30,6 @@ Für die weiteren Berechnungen wird die Variable X1 nicht benötigt, weshalb wir
 Advertising$X1 <- NULL
 ```
 
-
 ### Arithmetischer Mittelwert
 
 Bei der Berechnung des *arithmetischen Mittelwerts* in R sollte immer die Anweisung gegeben werden, fehlende Werte auszuschließen ("remove values which are not available"). Ansonsten stoppt R bei fehlenden Werten die Berechnung und gibt eine Fehlermeldung aus.  
@@ -54,7 +53,6 @@ print(paste0("Getrimmter Mittelwert der Variable Sales: ", round(mean_trim_sales
 median_sales <- median(Advertising$sales, na.rm = TRUE)
 print(paste0("Median der Variable Sales: ", median_sales))
 ```
-
 
 ### Varianz
 
@@ -119,7 +117,6 @@ ggplot(Advertising, aes(sales)) +
   geom_histogram(bins=15, color="white")  +
   labs(title="Histogramm für Sales", x="Sales", y="Anzahl") 
 ```
-
 
 ### Wahrscheinlichkeitsdichtefunktion
 
